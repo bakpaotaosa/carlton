@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" href="sukmatif.css">
+</head>
+
+<body>
+
+<div id="form">
+  <h2>Form Pendaftaran</h2>
+
+  <p>Nama : <input type="text" id="nama"></p>
+  <p>Kelas : <input type="text" id="kelas"></p>
+
+  <p>Umur :</p>
+  <label><input type="radio" name="umur" value="10-12"> 10-12</label><br>
+  <label><input type="radio" name="umur" value="13-15"> 13-15</label><br>
+  <label><input type="radio" name="umur" value="16-17"> 16-17</label><br>
+
+  <p>Jenis Kelamin :</p>
+  <label><input type="radio" name="jk" value="Laki-laki"> Laki-laki</label><br>
+  <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label><br>
+
+  <p>Tingkatan :</p>
+  <label><input type="radio" name="tingkatan" value="SD"> SD</label><br>
+  <label><input type="radio" name="tingkatan" value="SMP"> SMP</label><br>
+  <label><input type="radio" name="tingkatan" value="SMA"> SMA</label><br><br>
+
+  <button onclick="kirim()">OK</button>
+  <button onclick="clearData()">CLEAR</button>
+</div>
+
+<!-- HASIL -->
+<div id="hasil" style="display:none;">
+  <h3>Hasil Pendaftaran</h3>
+  Nama: <span id="hNama"></span><br>
+  Kelas: <span id="hKelas"></span><br>
+  Umur: <span id="hUmur"></span><br>
+  JK: <span id="hJk"></span><br>
+  Tingkat: <span id="hTingkat"></span><br><br>
+
+  <button onclick="kembali()">Kembali</button>
+</div>
+
+<script src="sukmatif.js"></script>
+
+</body>
+</html>

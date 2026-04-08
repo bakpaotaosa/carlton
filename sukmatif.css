@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  padding: 20px;
+}
+
+.form-container {
+  background: #fff;
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 140px 10px 1fr;
+  align-items: start;
+  margin-top: 12px;
+}
+
+.form-row label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 6px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.button-group button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background: #d63031;
+  color: white;
+}
+
+.btn-clear:hover {
+  background: #b71c1c;
+}
+
+.btn-ok {
+  background: #00b894;
+  color: white;
+}
+
+.btn-ok:hover {
+  background: #019875;
+}
